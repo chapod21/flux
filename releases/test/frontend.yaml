@@ -5,6 +5,7 @@ metadata:
   namespace: test
   annotations:
     flux.weave.works/automated: "true"
+    flux.weave.works/tag.chart-image: semver:~1.4
 spec:
   releaseName: frontend
   chart:
