@@ -18,7 +18,7 @@ spec:
       delay: true
     image:
       repository: chapod21/podinfo
-      tag: dev-ntiaqouv
+      tag: dev-jizdyuh9
     backend: http://backend-podinfo:9898/echo
     canary:
       enabled: true
