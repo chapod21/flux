@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: chapod21/podinfo
-      tag: dev-0b43ua5b
+      tag: dev-0ncu29hj
     backend: http://backend-podinfo:9898/echo
     canary:
       enabled: true
