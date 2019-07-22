@@ -6,6 +6,7 @@ metadata:
   namespace: test
   annotations:
     flux.weave.works/automated: "true"
+    flux.weave.works/tag.chart-image: glob:*
 spec:
   releaseName: frontend
   chart:
@@ -27,4 +28,4 @@ spec:
         gateway: internal.istio-system.svc.cluster.local
         host: testing.flagger.store.aws.z8s.io
       loadtest:
-        enabled: false
+        enabled: f
