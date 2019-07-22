@@ -1,0 +1,31 @@
+---
+apiVersion: flux.weave.works/v1beta1
+kind: HelmRelease
+metadata:
+  name: frontend
+  namespace: test
+  annotations:
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.chart-image: semver:~1.4
+spec:
+  releaseName: frontend
+  chart:
+    repository: https://flagger.app/
+    name: podinfo
+    version: 2.0.0
+  values:
+    image:
+      repository: chapod21/podinfo
+      tag: 1.4.3
+      backend: http://backend-podinfo:9898/echo
+      canary:
+        enabled: true
+        helmtest:
+          enabled: true
+          url: http://flagger-helmtester-loadtester.kube-system
+        istioIngress:
+          enabled: true
+          gateway: internal.istio-system.svc.cluster.local
+          host: testing.flagger.store.aws.z8s.io
+        loadtest:
+          enabled: true
