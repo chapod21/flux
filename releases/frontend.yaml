@@ -21,7 +21,7 @@ spec:
     canary:
       enabled: true
       helmtest:
-        enabled: false
+        enabled: true
         url: http://flagger-helmtester-loadtester.kube-system
       istioIngress:
         enabled: true
