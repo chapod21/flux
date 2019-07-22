@@ -28,4 +28,4 @@ spec:
         gateway: internal.istio-system.svc.cluster.local
         host: testing.flagger.store.aws.z8s.io
       loadtest:
-        enabled: true
+        enabled: false
