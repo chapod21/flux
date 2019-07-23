@@ -14,6 +14,10 @@ spec:
     name: podinfo
     version: 2.2.0
   values:
+    Slack:
+     user: flagger
+     channel: flaggertest
+     url: https://hooks.slack.com/services/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
     faults:
       error: false
     image:
