@@ -21,9 +21,16 @@ spec:
       tag: dev-jizdyuh9
     backend: http://backend-podinfo:9898/echo
     canary:
+      thresholds:
+        latency: 100
+      analysis:
+        maxWeight: 10
+        interval: 5m
+        threshold: 2
+        stepWeight: 2
       enabled: true
       helmtest:
-        enabled: true
+        enabled: false
         url: http://flagger-helmtester-loadtester.kube-system
       istioIngress:
         enabled: true
