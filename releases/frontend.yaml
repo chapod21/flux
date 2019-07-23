@@ -25,7 +25,7 @@ spec:
         latency: 100
       analysis:
         maxWeight: 10
-        interval: 5m
+        interval: 10s
         threshold: 2
         stepWeight: 2
       enabled: true
