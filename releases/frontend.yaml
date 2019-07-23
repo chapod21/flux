@@ -24,9 +24,9 @@ spec:
       thresholds:
         latency: 100
       analysis:
-        maxWeight: 10
+        maxWeight: 5
         interval: 1m
-        threshold: 1
+        threshold: 2
         stepWeight: 1
       enabled: true
       helmtest:
