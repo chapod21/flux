@@ -15,7 +15,7 @@ spec:
     version: 2.2.0
   values:
     faults:
-      delay: true
+      delay: false
     image:
       repository: chapod21/podinfo
       tag: dev-jizdyuh9
