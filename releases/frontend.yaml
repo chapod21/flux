@@ -18,7 +18,7 @@ spec:
       delay: true
     image:
       repository: chapod21/podinfo
-      tag: dev-7a2snvhg
+      tag: dev-lfxhjfm5
     backend: http://backend-podinfo:9898/echo
     canary:
       thresholds:
